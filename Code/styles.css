@@ -1,0 +1,161 @@
+body {
+  font-family: "Biryani", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000;
+  max-width: 960px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.menu {
+  background-color: #f9cfdf;
+  width: 400px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+nav {
+  position: absolute;
+  left: 65px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+nav a {
+  font-size: 32px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 3;
+}
+
+.natural {
+  padding-right: 260px;
+  position: relative;
+}
+
+.natural h2 {
+  font-size: 64px;
+  line-height: 1.125;
+  font-weight: 700;
+}
+
+.natural .copy {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 360px;
+  transform: translateY(-50%);
+}
+
+.natural img {
+  width: 95%;
+}
+
+.one-thing {
+  padding-left: 360px;
+  position: relative;
+}
+
+.one-thing .copy {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 480px;
+}
+
+.one-thing h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.one-thing p {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.one-thing img {
+  width: 95%;
+}
+
+.lookbook {
+  padding: 220px 20px 180px 20px;
+  background-image: url(../Assets/image_3.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.lookbook h2 {
+  font-size: 64px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.natural img,
+.natural h2 {
+  transition: transform 0.5s ease-in-out;
+}
+
+.natural:hover img {
+  transform: rotate(-5deg);
+}
+
+.natural:hover h2 {
+  transform: scale(1.15);
+}
+
+.one-thing .copy,
+.one-thing h2,
+.one-thing img {
+  transition: 0.5s ease-in-out;
+}
+
+.one-thing:hover .copy {
+  transform: scale(1.1) translateX(20px);
+}
+
+.one-thing:hover img {
+  transform: rotate(5deg);
+}
+
+.lookbook h2 {
+  transition: transform 0.5s ease-in-out;
+}
+
+.lookbook:hover h2 {
+  transform: scale(0.8);
+  color: rgb(255, 255, 255, 0.8);
+}
+
+
